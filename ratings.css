@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--white); margin-top: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: "Overpass";
+  font-size: 15px;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 420px;
+  padding: 40px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32323b;
+  margin-bottom: 32px;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+}
+
+.star-icon {
+  height: 15px;
+}
+
+.header {
+  margin-bottom: 15px;
+}
+
+.question {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.yap-section {
+  margin-bottom: 20px;
+}
+
+.yap-text {
+  line-height: 25px;
+  color: rgb(133, 156, 179);
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rating-btns {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #32323b;
+  color: rgb(133, 156, 179);
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selected {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.rating-btns:hover {
+  color: var(--dark-blue);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding: 14px;
+  color: black;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
